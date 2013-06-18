@@ -1,0 +1,6 @@
+/packages
+/*.suo
+/Rss4Mobi/*.user
+/Rss4Mobi/bin
+
+/Rss4Mobi/obj

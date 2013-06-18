@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>我的账户</value>
+  </data>
+  <data name="ActivateFaild" xml:space="preserve">
+    <value>激活失败</value>
+  </data>
+  <data name="ActivateFaildTip" xml:space="preserve">
+    <value>此帐号可能已经被激活过，或者激活链接已失效，请</value>
+  </data>
+  <data name="ActivateSuccess" xml:space="preserve">
+    <value>激活成功</value>
+  </data>
+  <data name="ActivateSuccessTip" xml:space="preserve">
+    <value>激活成功,现在去</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>创建用户</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>查看详细</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>邮箱</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>免费</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="HomeContent" xml:space="preserve">
+    <value>精彩内容</value>
+  </data>
+  <data name="HomeContentDescription" xml:space="preserve">
+    <value>你可以在本站推荐的内容里订阅，也可以导入你的鲜果或谷歌GoogleReader订阅数据。</value>
+  </data>
+  <data name="HomeDescription" xml:space="preserve">
+    <value>提供由RSS订阅源转换为epub或mobi格式的免费在线服务,定时传送到你的kindle中,你可以把它当成一份每天更新并且免费的电子报纸/杂志!支持从鲜果或Google Reader中导入订阅信息.</value>
+  </data>
+  <data name="HomeFree" xml:space="preserve">
+    <value>免费</value>
+  </data>
+  <data name="HomeFreeDescription" xml:space="preserve">
+    <value>提供多达20个feed的免费RSS递送服务。每个feed条目数量不限，并且包括内容中图片。</value>
+  </data>
+  <data name="HomeTime" xml:space="preserve">
+    <value>定时推送</value>
+  </data>
+  <data name="HomeTimeDescription" xml:space="preserve">
+    <value>你可以选择每天或者每周某个时间点，推送到你指定的kindle邮箱。支持亚马逊kindle以及多看iduokan等邮箱。</value>
+  </data>
+  <data name="LogOn" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>记住我</value>
+  </data>
+  <data name="ReRegister" xml:space="preserve">
+    <value>重新注册</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>确认密码</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="UserNameOrEmail" xml:space="preserve">
+    <value>用户名/邮箱</value>
+  </data>
+  <data name="MyFeeds" xml:space="preserve">
+    <value>我的订阅</value>
+  </data>
+  <data name="AboutContent" xml:space="preserve">
+    <value>mobi是全球唯一专为手机及移动终端设备打造的域名，是为ICANN批准的全新国际顶级域名，其致力于将互联网信息传送到手机等移动设备上。此外mobi还是亚马逊电子书的专有格式，自从亚马逊推出kindle以来，这个阅读器的专用格式mobi就很流行。
+              rss4.mobi为用户将新鲜的电子报刊杂志推送到你的kindle或安装有kindle软件的移动设备上。你可以直接订阅本网站上提供的流行的新闻源，或者订阅你喜欢的任意博客和网站。</value>
+  </data>
+</root>

@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = Resources.Content.ActivateSuccess;
+    Layout = "~/Views/Shared/_BootstrapLayout.basic.cshtml";
+}
+
+<div class="container">
+    <p class="text-center">
+        <img src="@Url.Content("~/Content/images/smile.png")" />  @Resources.Content.ActivateSuccessTip<a href="@Url.Action("LogOn","Account")" class="btn btn-link">@Resources.Content.LogOn&raquo;</a>.
+    </p>
+</div>

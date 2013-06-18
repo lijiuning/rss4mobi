@@ -1,0 +1,51 @@
+@using NavigationRoutes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="@Styles.Url("~/content/css")" rel="stylesheet"/>
+    @RenderSection("head", required: false)
+    @Html.Partial("_html5shiv")
+</head>
+<body>
+    <div id="wrap">
+        <div class="navbar  navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand"><img src="@Url.Content("~/content/images/logo_s.png")"/></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            @Html.Navigation()
+                            @Html.Partial("SetCulture")
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            @Html.Partial("_alerts")
+            @RenderBody()
+            <hr>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p>Create by LiM &copy; @DateTime.Now.ToString("yyyy")</p>
+        </div>
+    </div>
+
+    @Scripts.Render("~/js")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

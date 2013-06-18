@@ -1,0 +1,45 @@
+﻿@model Rss4Mobi.Models.LogOnModel
+
+@{
+    ViewBag.Title =Resources.Content.LogOn;
+    Layout = "~/Views/shared/_BootstrapLayout.basic.cshtml";
+}
+<div class="container">
+    @using (Html.BeginForm("LogOn", "Account", new { ReturnUrl = Request.QueryString["ReturnUrl"] }, FormMethod.Post))
+    {
+        <fieldset class="form-horizontal">
+            <legend>@Resources.Content.LogOn
+            </legend>
+            <div class="control-group">
+                <div class="control-label">
+                    @Resources.Content.Email
+                </div>
+                <div class="controls">
+                    @Html.EditorFor(model => model.UserName,new { @class = "input-xlarge" })
+                    @Html.ValidationMessageFor(model=>model.UserName,null,new { @class = "help-inline" })
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="control-label">
+                    @Resources.Content.Password
+                </div>
+                <div class="controls">
+                    @Html.EditorFor(model => model.Password,new { @class = "input-xlarge" })
+                    @Html.ValidationMessageFor(model=>model.Password,null,new { @class = "help-inline" })
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="control-label">
+                </div>
+                <div class="controls">
+                    <label class="checkbox">
+                     @Html.EditorFor(model => model.RememberMe)@Resources.Content.RememberMe
+                    </label>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button class="btn btn-primary" type="submit">@Resources.Content.LogOn</button>
+            </div>
+        </fieldset>
+    }
+</div>

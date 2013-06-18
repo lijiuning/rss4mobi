@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = Resources.Content.ActivateFaild;
+    Layout = "~/Views/Shared/_BootstrapLayout.basic.cshtml";
+}
+
+<div class="container">
+
+        <p class="text-center"><img src="@Url.Content("~/Content/images/sad.png")" />  @Resources.Content.ActivateFaildTip<a href="@Url.Action("Register","Account")" class="btn btn-link">@Resources.Content.ReRegister&raquo;</a></p>
+</div>

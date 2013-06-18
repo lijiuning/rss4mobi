@@ -1,0 +1,13 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = Resources.Content.About;
+    Layout = "~/Views/shared/_BootstrapLayout.basic.cshtml";
+}
+
+      <div class="jumbotron">
+        <h3>@Resources.Content.About <span style="color:orange">Rss4.Mobi</span> <small>(RSS for mobile)</small></h3>
+          <p class="about">@Resources.Content.AboutContent
+          </p>
+        <p class="text-right"><a class="btn btn-success" href="#">@Resources.Content.Register &raquo;</a></p>
+      </div>

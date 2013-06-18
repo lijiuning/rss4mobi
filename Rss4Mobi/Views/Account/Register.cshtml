@@ -1,0 +1,49 @@
+﻿@using BootstrapSupport
+@model Rss4Mobi.Models.RegisterModel
+@using (Html.BeginForm("Register", "Account", FormMethod.Post))
+{
+ @Html.ValidationSummary(true)
+    <fieldset class="form-horizontal">
+        <legend>@Resources.Content.CreateAccount <small>@Resources.Content.Register</small></legend>
+            <div class="control-group">
+                <div class="control-label">
+                    @Resources.Content.UserName
+                </div>
+                 <div class="controls">
+                     @Html.EditorFor(model=>model.UserName, new { @class = "input-xlarge" })
+                     @Html.ValidationMessageFor(model=>model.UserName, null, new { @class = "help-inline" })
+                 </div>
+            </div>
+        <div class="control-group">
+            <div class="control-label">
+                @Resources.Content.Email
+            </div>
+            <div class="controls">
+                @Html.EditorFor(model=>model.Email, new { @class = "input-xlarge" })
+                @Html.ValidationMessageFor(model=>model.Email,null, new { @class = "help-inline" })
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="control-label">
+                @Resources.Content.Password
+            </div>
+            <div class="controls">
+                @Html.EditorFor(model=>model.Password, new { @class = "input-xlarge" })
+                @Html.ValidationMessageFor(model=>model.Password, null, new { @class = "help-inline" })
+            </div>
+        </div>
+        <div class="control-group">
+                <div class="control-label">
+                    @Resources.Content.ConfirmPassword
+                </div>
+                 <div class="controls">
+                     @Html.EditorFor(model=>model.ConfirmPassword, new { @class = "input-xlarge" })
+                     @Html.ValidationMessageFor(model=>model.ConfirmPassword, null, new { @class = "help-inline" })
+                 </div>
+            </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">@Resources.Content.Register</button>
+            @Html.ActionLink(Resources.Content.Cancel, "Index","Home",null, new { @class = "btn " })
+        </div>
+    </fieldset>
+}

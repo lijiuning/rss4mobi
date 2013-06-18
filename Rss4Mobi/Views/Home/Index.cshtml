@@ -1,0 +1,37 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "Rss 4 Mobi beta";
+    Layout = "~/Views/shared/_BootstrapLayout.basic.cshtml";
+}
+
+<div class="hero-unit">
+    <div class="row">
+        <div class="span6">
+            <p>@Resources.Content.HomeDescription</p>
+        </div>
+        <div class="span5">
+            <img class="img-rounded" src="@Url.Content("~/Content/images/home.png")"/>
+            <p class="text-right">
+                <a class="btn btn-success" href="@Url.Action("Register","Account")">@Resources.Content.Register &raquo;</a>
+            </p>  
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span4">
+        <h3>@Resources.Content.HomeFree</h3>
+        <p>@Resources.Content.HomeFreeDescription</p>
+        <p><a class="btn btn-link" href="#">@Resources.Content.Details &raquo;</a></p>
+    </div>
+    <div class="span4">
+        <h3>@Resources.Content.HomeTime</h3>
+        <p>@Resources.Content.HomeTimeDescription</p>
+        <p><a class="btn btn-link" href="#">@Resources.Content.Details &raquo;</a></p>
+    </div>
+    <div class="span4">
+        <h3>@Resources.Content.HomeContent</h3>
+        <p>@Resources.Content.HomeContentDescription</p>
+        <p><a class="btn btn-link" href="#">@Resources.Content.Details &raquo;</a></p>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+﻿@{
+    Layout = null;
+}
+@if(Session["Culture"].ToString() == "en-US")
+{
+    <li><a href="@Url.Action("SetCulture","Home",new{language="zh-CN"})">中文</a></li>
+}
+else if (Session["Culture"].ToString() == "zh-CN") {
+    <li><a href="@Url.Action("SetCulture","Home",new{language="en-US"})">English</a> </li>
+}
